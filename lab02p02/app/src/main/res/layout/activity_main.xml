@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    >
+
+<TextView
+    android:id="@+id/textView01"
+    android:text="Dana 1:"
+    android:textSize="35sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/editText01"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        app:layout_constraintLeft_toRightOf="@id/textView01"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/textView01"
+        android:layout_marginLeft="10dp"
+        android:inputType="number"
+        android:hint="całkowita"
+        />
+
+    <TextView
+        android:id="@+id/textView02"
+        android:text="Dana 2:"
+        android:textSize="35sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView01"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/editText02"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        app:layout_constraintLeft_toRightOf="@id/textView01"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/textView02"
+        android:layout_marginLeft="10dp"
+        android:inputType="number"
+        android:hint="całkowita"
+        />
+    <Button
+        android:id="@+id/button01"
+        android:text="LICZ"
+        android:textSize="35sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editText02"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:onClick="licz"/>
+    <EditText
+        android:id="@+id/editText03"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button01"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:editable="false"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
